@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+<song mastervolume="127" name="Untitled" sendsync="0" tempo="110" ticksperline="6">
+
+<blocks>
+<block commandpages="1" length="64" name="" number="0" tracks="16">
+<note instrument="1" line="0" track="0">44</note>
+<note instrument="1" line="2" track="0">44</note>
+<note instrument="1" line="4" track="0">44</note>
+<note instrument="1" line="6" track="0">44</note>
+<note instrument="1" line="8" track="0">41</note>
+<note instrument="1" line="10" track="0">41</note>
+<note instrument="1" line="12" track="0">41</note>
+<note instrument="1" line="14" track="0">41</note>
+<note instrument="1" line="16" track="0">46</note>
+<note instrument="1" line="18" track="0">46</note>
+<note instrument="1" line="20" track="0">46</note>
+<note instrument="1" line="22" track="0">46</note>
+<note instrument="1" line="24" track="0">42</note>
+<note instrument="1" line="26" track="0">42</note>
+<note instrument="1" line="28" track="0">42</note>
+<note instrument="1" line="30" track="0">42</note>
+<note instrument="1" line="32" track="0">39</note>
+<note instrument="1" line="34" track="0">39</note>
+<note instrument="1" line="36" track="0">39</note>
+<note instrument="1" line="38" track="0">39</note>
+<note instrument="1" line="40" track="0">42</note>
+<note instrument="1" line="42" track="0">42</note>
+<note instrument="1" line="44" track="0">42</note>
+<note instrument="1" line="46" track="0">39</note>
+<note instrument="1" line="49" track="0">39</note>
+<note instrument="1" line="52" track="0">39</note>
+<note instrument="1" line="55" track="0">42</note>
+<note instrument="1" line="57" track="0">42</note>
+<note instrument="1" line="59" track="0">39</note>
+<note instrument="1" line="61" track="0">39</note>
+<note instrument="1" line="63" track="0">65</note>
+<note instrument="2" line="0" track="1">49</note>
+<note instrument="2" line="4" track="1">49</note>
+<note instrument="2" line="8" track="1">49</note>
+<note instrument="2" line="12" track="1">49</note>
+<note instrument="2" line="16" track="1">49</note>
+<note instrument="2" line="20" track="1">49</note>
+<note instrument="2" line="24" track="1">49</note>
+<note instrument="2" line="28" track="1">49</note>
+<note instrument="2" line="32" track="1">49</note>
+<note instrument="2" line="36" track="1">49</note>
+<note instrument="2" line="40" track="1">49</note>
+<note instrument="2" line="44" track="1">49</note>
+<note instrument="2" line="48" track="1">49</note>
+<note instrument="2" line="52" track="1">49</note>
+<note instrument="2" line="56" track="1">49</note>
+<note instrument="2" line="60" track="1">49</note>
+<note instrument="2" line="62" track="1">49</note>
+<note instrument="3" line="0" track="3">44</note>
+<note instrument="3" line="2" track="3">48</note>
+<note instrument="3" line="4" track="3">44</note>
+<note instrument="3" line="6" track="3">48</note>
+<note instrument="3" line="8" track="3">41</note>
+<note instrument="3" line="10" track="3">44</note>
+<note instrument="3" line="12" track="3">41</note>
+<note instrument="3" line="14" track="3">44</note>
+<note instrument="3" line="16" track="3">58</note>
+<note instrument="3" line="18" track="3">41</note>
+<note instrument="3" line="20" track="3">58</note>
+<note instrument="3" line="22" track="3">41</note>
+<note instrument="3" line="24" track="3">42</note>
+<note instrument="3" line="26" track="3">46</note>
+<note instrument="3" line="28" track="3">42</note>
+<note instrument="3" line="30" track="3">46</note>
+<note instrument="3" line="32" track="3">39</note>
+<note instrument="3" line="34" track="3">42</note>
+<note instrument="3" line="36" track="3">39</note>
+<note instrument="3" line="38" track="3">42</note>
+<note instrument="3" line="40" track="3">42</note>
+<note instrument="3" line="42" track="3">46</note>
+<note instrument="3" line="44" track="3">42</note>
+<note instrument="3" line="46" track="3">39</note>
+<note instrument="3" line="49" track="3">42</note>
+<note instrument="3" line="52" track="3">39</note>
+<note instrument="3" line="55" track="3">42</note>
+<note instrument="3" line="57" track="3">46</note>
+<note instrument="3" line="59" track="3">39</note>
+<note instrument="3" line="61" track="3">42</note>
+<note instrument="3" line="63" track="3">44</note>
+<note instrument="3" line="0" track="4">48</note>
+<note instrument="3" line="63" track="4">44</note>
+</block>
+<block commandpages="1" length="64" name="" number="1" tracks="16">
+<note instrument="1" line="0" track="0">36</note>
+<note instrument="1" line="2" track="0">36</note>
+<note instrument="1" line="4" track="0">36</note>
+<note instrument="1" line="6" track="0">36</note>
+<note instrument="1" line="8" track="0">34</note>
+<note instrument="1" line="10" track="0">34</note>
+<note instrument="1" line="12" track="0">34</note>
+<note instrument="1" line="14" track="0">34</note>
+<note instrument="1" line="16" track="0">32</note>
+<note instrument="1" line="18" track="0">32</note>
+<note instrument="1" line="20" track="0">32</note>
+<note instrument="1" line="22" track="0">32</note>
+<note instrument="1" line="24" track="0">30</note>
+<note instrument="1" line="26" track="0">30</note>
+<note instrument="1" line="28" track="0">30</note>
+<note instrument="1" line="30" track="0">30</note>
+<note instrument="1" line="31" track="0">46</note>
+<note instrument="1" line="32" track="0">36</note>
+<note instrument="1" line="34" track="0">36</note>
+<note instrument="1" line="36" track="0">36</note>
+<note instrument="1" line="38" track="0">36</note>
+<note instrument="1" line="40" track="0">34</note>
+<note instrument="1" line="42" track="0">34</note>
+<note instrument="1" line="44" track="0">34</note>
+<note instrument="1" line="46" track="0">34</note>
+<note instrument="1" line="48" track="0">32</note>
+<note instrument="1" line="50" track="0">32</note>
+<note instrument="1" line="52" track="0">32</note>
+<note instrument="1" line="54" track="0">32</note>
+<note instrument="1" line="56" track="0">30</note>
+<note instrument="1" line="58" track="0">30</note>
+<note instrument="1" line="60" track="0">30</note>
+<note instrument="1" line="62" track="0">30</note>
+<note instrument="1" line="63" track="0">46</note>
+<note instrument="2" line="0" track="1">49</note>
+<note instrument="2" line="2" track="1">50</note>
+<note instrument="2" line="4" track="1">49</note>
+<note instrument="2" line="6" track="1">50</note>
+<note instrument="2" line="8" track="1">49</note>
+<note instrument="2" line="10" track="1">50</note>
+<note instrument="2" line="12" track="1">49</note>
+<note instrument="2" line="14" track="1">50</note>
+<note instrument="2" line="16" track="1">49</note>
+<note instrument="2" line="18" track="1">50</note>
+<note instrument="2" line="20" track="1">49</note>
+<note instrument="2" line="22" track="1">50</note>
+<note instrument="2" line="24" track="1">49</note>
+<note instrument="2" line="26" track="1">50</note>
+<note instrument="2" line="28" track="1">49</note>
+<note instrument="2" line="30" track="1">50</note>
+<note instrument="2" line="32" track="1">49</note>
+<note instrument="2" line="34" track="1">50</note>
+<note instrument="2" line="36" track="1">49</note>
+<note instrument="2" line="38" track="1">50</note>
+<note instrument="2" line="40" track="1">49</note>
+<note instrument="2" line="42" track="1">50</note>
+<note instrument="2" line="44" track="1">49</note>
+<note instrument="2" line="46" track="1">49</note>
+<note instrument="2" line="48" track="1">49</note>
+<note instrument="2" line="50" track="1">50</note>
+<note instrument="2" line="52" track="1">49</note>
+<note instrument="2" line="54" track="1">50</note>
+<note instrument="2" line="56" track="1">49</note>
+<note instrument="2" line="58" track="1">50</note>
+<note instrument="2" line="60" track="1">49</note>
+<note instrument="2" line="62" track="1">52</note>
+<note instrument="2" line="63" track="1">49</note>
+<note instrument="2" line="4" track="2">53</note>
+<note instrument="2" line="12" track="2">53</note>
+<note instrument="2" line="20" track="2">53</note>
+<note instrument="2" line="28" track="2">53</note>
+<note instrument="2" line="36" track="2">53</note>
+<note instrument="2" line="44" track="2">53</note>
+<note instrument="2" line="52" track="2">53</note>
+<note instrument="2" line="60" track="2">53</note>
+<note instrument="2" line="63" track="2">53</note>
+<note instrument="3" line="0" track="3">48</note>
+<note instrument="3" line="2" track="3">51</note>
+<note instrument="3" line="4" track="3">48</note>
+<note instrument="3" line="6" track="3">51</note>
+<note instrument="3" line="8" track="3">46</note>
+<note instrument="3" line="10" track="3">49</note>
+<note instrument="3" line="12" track="3">46</note>
+<note instrument="3" line="14" track="3">49</note>
+<note instrument="3" line="16" track="3">44</note>
+<note instrument="3" line="18" track="3">48</note>
+<note instrument="3" line="20" track="3">44</note>
+<note instrument="3" line="22" track="3">48</note>
+<note instrument="3" line="24" track="3">42</note>
+<note instrument="3" line="26" track="3">46</note>
+<note instrument="3" line="28" track="3">42</note>
+<note instrument="3" line="30" track="3">46</note>
+<note instrument="3" line="31" track="3">58</note>
+<note instrument="3" line="32" track="3">48</note>
+<note instrument="3" line="34" track="3">51</note>
+<note instrument="3" line="36" track="3">48</note>
+<note instrument="3" line="38" track="3">51</note>
+<note instrument="3" line="40" track="3">46</note>
+<note instrument="3" line="42" track="3">49</note>
+<note instrument="3" line="44" track="3">46</note>
+<note instrument="3" line="46" track="3">49</note>
+<note instrument="3" line="48" track="3">44</note>
+<note instrument="3" line="50" track="3">48</note>
+<note instrument="3" line="52" track="3">44</note>
+<note instrument="3" line="54" track="3">48</note>
+<note instrument="3" line="56" track="3">42</note>
+<note instrument="3" line="58" track="3">46</note>
+<note instrument="3" line="60" track="3">42</note>
+<note instrument="3" line="62" track="3">42</note>
+<note instrument="3" line="63" track="3">46</note>
+<command commandpage="0" line="0" track="0" value="240">202</command>
+</block>
+<block commandpages="1" length="64" name="" number="2" tracks="16">
+<note instrument="1" line="0" track="0">36</note>
+<note instrument="1" line="3" track="0">36</note>
+<note instrument="1" line="5" track="0">36</note>
+<note instrument="1" line="8" track="0">34</note>
+<note instrument="1" line="11" track="0">34</note>
+<note instrument="1" line="13" track="0">34</note>
+<note instrument="1" line="16" track="0">32</note>
+<note instrument="1" line="19" track="0">32</note>
+<note instrument="1" line="21" track="0">32</note>
+<note instrument="1" line="23" track="0">48</note>
+<note instrument="1" line="26" track="0">48</note>
+<note instrument="1" line="28" track="0">48</note>
+<note instrument="1" line="31" track="0">44</note>
+<note instrument="1" line="34" track="0">44</note>
+<note instrument="1" line="36" track="0">44</note>
+<note instrument="1" line="39" track="0">41</note>
+<note instrument="1" line="42" track="0">41</note>
+<note instrument="1" line="44" track="0">41</note>
+<note instrument="1" line="46" track="0">42</note>
+<note instrument="1" line="48" track="0">48</note>
+<note instrument="1" line="50" track="0">32</note>
+<note instrument="1" line="52" track="0">32</note>
+<note instrument="1" line="54" track="0">32</note>
+<note instrument="1" line="57" track="0">32</note>
+<note instrument="1" line="59" track="0">32</note>
+<note instrument="1" line="62" track="0">30</note>
+<note instrument="2" line="0" track="1">49</note>
+<note instrument="2" line="2" track="1">50</note>
+<note instrument="2" line="4" track="1">49</note>
+<note instrument="2" line="6" track="1">50</note>
+<note instrument="2" line="8" track="1">49</note>
+<note instrument="2" line="10" track="1">50</note>
+<note instrument="2" line="12" track="1">49</note>
+<note instrument="2" line="14" track="1">50</note>
+<note instrument="2" line="16" track="1">49</note>
+<note instrument="2" line="18" track="1">50</note>
+<note instrument="2" line="20" track="1">49</note>
+<note instrument="2" line="22" track="1">50</note>
+<note instrument="2" line="24" track="1">49</note>
+<note instrument="2" line="26" track="1">50</note>
+<note instrument="2" line="28" track="1">49</note>
+<note instrument="2" line="30" track="1">50</note>
+<note instrument="2" line="32" track="1">49</note>
+<note instrument="2" line="34" track="1">50</note>
+<note instrument="2" line="36" track="1">49</note>
+<note instrument="2" line="38" track="1">50</note>
+<note instrument="2" line="40" track="1">49</note>
+<note instrument="2" line="42" track="1">50</note>
+<note instrument="2" line="44" track="1">49</note>
+<note instrument="2" line="46" track="1">50</note>
+<note instrument="2" line="48" track="1">49</note>
+<note instrument="2" line="50" track="1">50</note>
+<note instrument="2" line="52" track="1">49</note>
+<note instrument="2" line="54" track="1">50</note>
+<note instrument="2" line="56" track="1">49</note>
+<note instrument="2" line="58" track="1">50</note>
+<note instrument="2" line="60" track="1">49</note>
+<note instrument="2" line="63" track="1">49</note>
+<note instrument="2" line="4" track="2">53</note>
+<note instrument="2" line="12" track="2">53</note>
+<note instrument="2" line="20" track="2">53</note>
+<note instrument="2" line="28" track="2">53</note>
+<note instrument="2" line="36" track="2">53</note>
+<note instrument="2" line="44" track="2">53</note>
+<note instrument="2" line="52" track="2">53</note>
+<note instrument="2" line="60" track="2">53</note>
+<note instrument="2" line="63" track="2">53</note>
+<command commandpage="0" line="1" track="0" value="255">186</command>
+<command commandpage="0" line="4" track="0" value="255">186</command>
+<command commandpage="0" line="6" track="0" value="255">186</command>
+</block>
+</blocks>
+
+<sections>
+<section number="0">0</section>
+</sections>
+
+<playingsequences>
+<playingsequence name="" number="0">
+<position number="0">0</position>
+<position number="1">1</position>
+<position number="2">0</position>
+<position number="3">2</position>
+</playingsequence>
+</playingsequences>
+
+<instruments>
+<instrument defaultvelocity="127" hold="0" midichannel="0" midiinterface="Scarlett 4i4 USB MIDI 1" midipreset="0" name="TD3" number="0" transpose="0"/>
+<instrument defaultvelocity="127" hold="0" midichannel="0" midiinterface="playback" midipreset="0" name="Drum" number="1" transpose="0"/>
+<instrument defaultvelocity="127" hold="0" midichannel="1" midiinterface="playback" midipreset="0" name="Vital" number="2" transpose="0"/>
+</instruments>
+
+<tracks>
+<track mute="0" number="0" solo="0" volume="127">Track 1</track>
+<track mute="0" number="1" solo="0" volume="127">Track 2</track>
+<track mute="0" number="2" solo="0" volume="127">Track 3</track>
+<track mute="0" number="3" solo="0" volume="127">Track 4</track>
+<track mute="0" number="4" solo="0" volume="127">Track 5</track>
+<track mute="0" number="5" solo="0" volume="127">Track 6</track>
+<track mute="0" number="6" solo="0" volume="127">Track 7</track>
+<track mute="0" number="7" solo="0" volume="127">Track 8</track>
+<track mute="0" number="8" solo="0" volume="127">Track 9</track>
+<track mute="0" number="9" solo="0" volume="127">Track 10</track>
+<track mute="0" number="10" solo="0" volume="127">Track 11</track>
+<track mute="0" number="11" solo="0" volume="127">Track 12</track>
+<track mute="0" number="12" solo="0" volume="127">Track 13</track>
+<track mute="0" number="13" solo="0" volume="127">Track 14</track>
+<track mute="0" number="14" solo="0" volume="127">Track 15</track>
+<track mute="0" number="15" solo="0" volume="127">Track 16</track>
+</tracks>
+
+<messages>
+</messages>
+
+</song>

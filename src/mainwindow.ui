@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Vesa Halttunen</author>
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>819</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tutka</string>
+  </property>
+  <widget class="QWidget" name="widgetMain">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widgetTop" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="leftMargin">
+        <number>4</number>
+       </property>
+       <property name="topMargin">
+        <number>4</number>
+       </property>
+       <property name="rightMargin">
+        <number>4</number>
+       </property>
+       <property name="bottomMargin">
+        <number>4</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frameControls">
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <property name="leftMargin">
+           <number>4</number>
+          </property>
+          <property name="topMargin">
+           <number>4</number>
+          </property>
+          <property name="rightMargin">
+           <number>4</number>
+          </property>
+          <property name="bottomMargin">
+           <number>4</number>
+          </property>
+          <property name="horizontalSpacing">
+           <number>2</number>
+          </property>
+          <property name="verticalSpacing">
+           <number>4</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="labelPlaySong">
+            <property name="text">
+             <string>Song</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="buttonPlaySong">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="text">
+             <string>Play</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QPushButton" name="buttonContinueSong">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="text">
+             <string>Continue</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="labelPlayBlock">
+            <property name="text">
+             <string>Block</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="buttonPlayBlock">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="text">
+             <string>Play</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QPushButton" name="buttonContinueBlock">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="text">
+             <string>Continue</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" colspan="3">
+           <widget class="QPushButton" name="buttonStop">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="text">
+             <string>Stop</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widgetInstrument" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="spacing">
+           <number>4</number>
+          </property>
+          <property name="leftMargin">
+           <number>4</number>
+          </property>
+          <property name="topMargin">
+           <number>4</number>
+          </property>
+          <property name="rightMargin">
+           <number>4</number>
+          </property>
+          <property name="bottomMargin">
+           <number>4</number>
+          </property>
+          <item>
+           <widget class="QGroupBox" name="groupBoxInstrument">
+            <property name="title">
+             <string>Instrument</string>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <property name="spacing">
+              <number>4</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="InstrumentSpinBox" name="spinBoxInstrument">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="maximum">
+                <number>255</number>
+               </property>
+               <property name="value">
+                <number>1</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditInstrument">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="buttonInstrumentProperties">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="text">
+                <string>Properties</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widgetMode" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <property name="spacing">
+              <number>4</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <spacer name="horizontalSpacerMode">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBoxEdit">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="text">
+                <string>Edit</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBoxChord">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="text">
+                <string>Chord</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="labelSpace">
+               <property name="text">
+                <string>Space</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBoxSpace">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="maximum">
+                <number>32</number>
+               </property>
+               <property name="value">
+                <number>1</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="labelKeyboardOctaves">
+               <property name="text">
+                <string>Keyboard Octaves</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBoxKeyboardOctaves">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="currentIndex">
+                <number>0</number>
+               </property>
+               <item>
+                <property name="text">
+                 <string>1 and 2</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2 and 3</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>3 and 4</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>4 and 5</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>5 and 6</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>6 and 7</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>7 and 8</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>8 and 9</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>9 and A</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widgetTracker" native="true">
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="Tracker" name="tracker" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QScrollBar" name="horizontalScrollBarTracker">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QScrollBar" name="verticalScrollBarTracker">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widgetStatusBar" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="leftMargin">
+        <number>4</number>
+       </property>
+       <property name="topMargin">
+        <number>4</number>
+       </property>
+       <property name="rightMargin">
+        <number>4</number>
+       </property>
+       <property name="bottomMargin">
+        <number>4</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frameStatus1">
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <property name="spacing">
+           <number>4</number>
+          </property>
+          <property name="leftMargin">
+           <number>4</number>
+          </property>
+          <property name="topMargin">
+           <number>4</number>
+          </property>
+          <property name="rightMargin">
+           <number>4</number>
+          </property>
+          <property name="bottomMargin">
+           <number>4</number>
+          </property>
+          <item>
+           <widget class="ClickableLabel" name="labelSection">
+            <property name="text">
+             <string>Section 1/1</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ClickableLabel" name="labelPlayingSequence">
+            <property name="text">
+             <string>Playing Sequence 1/1</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ClickableLabel" name="labelPosition">
+            <property name="text">
+             <string>Position 1/1</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ClickableLabel" name="labelBlock">
+            <property name="text">
+             <string>Block 1/1</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="labelCommandPage">
+            <property name="text">
+             <string>Command Page 1/1</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frameStatus2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <property name="spacing">
+           <number>4</number>
+          </property>
+          <property name="leftMargin">
+           <number>4</number>
+          </property>
+          <property name="topMargin">
+           <number>4</number>
+          </property>
+          <property name="rightMargin">
+           <number>4</number>
+          </property>
+          <property name="bottomMargin">
+           <number>4</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="labelStatus">
+            <property name="text">
+             <string>Stopped</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frameTimer">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <property name="spacing">
+           <number>4</number>
+          </property>
+          <property name="leftMargin">
+           <number>4</number>
+          </property>
+          <property name="topMargin">
+           <number>4</number>
+          </property>
+          <property name="rightMargin">
+           <number>4</number>
+          </property>
+          <property name="bottomMargin">
+           <number>4</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="labelTimer">
+            <property name="text">
+             <string>00:00</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>819</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionFileNew"/>
+    <addaction name="actionFileOpen"/>
+    <addaction name="separator"/>
+    <addaction name="actionFileSave"/>
+    <addaction name="actionFileSaveAs"/>
+    <addaction name="separator"/>
+    <addaction name="actionFileQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="actionEditCut"/>
+    <addaction name="actionEditCopy"/>
+    <addaction name="actionEditPaste"/>
+    <addaction name="separator"/>
+    <addaction name="actionEditClear"/>
+    <addaction name="separator"/>
+    <addaction name="actionEditTranspose"/>
+    <addaction name="actionEditExpandShrink"/>
+    <addaction name="actionEditChangeInstrument"/>
+   </widget>
+   <widget class="QMenu" name="menuSong">
+    <property name="title">
+     <string>S&amp;ong</string>
+    </property>
+    <addaction name="actionSongSectionList"/>
+    <addaction name="actionSongTrackVolumes"/>
+    <addaction name="separator"/>
+    <addaction name="actionSongTranspose"/>
+    <addaction name="actionSongExpandShrink"/>
+    <addaction name="actionSongChangeInstrument"/>
+    <addaction name="separator"/>
+    <addaction name="actionSongProperties"/>
+   </widget>
+   <widget class="QMenu" name="menuPlayingSequence">
+    <property name="title">
+     <string>&amp;Playing Sequence</string>
+    </property>
+    <addaction name="actionPlayingSequenceEditCurrent"/>
+    <addaction name="separator"/>
+    <addaction name="actionPlayingSequenceList"/>
+   </widget>
+   <widget class="QMenu" name="menuBlock">
+    <property name="title">
+     <string>&amp;Block</string>
+    </property>
+    <addaction name="actionBlockCut"/>
+    <addaction name="actionBlockCopy"/>
+    <addaction name="actionBlockPaste"/>
+    <addaction name="separator"/>
+    <addaction name="actionBlockClear"/>
+    <addaction name="separator"/>
+    <addaction name="actionBlockSelectAll"/>
+    <addaction name="separator"/>
+    <addaction name="actionBlockTranspose"/>
+    <addaction name="actionBlockExpandShrink"/>
+    <addaction name="actionBlockChangeInstrument"/>
+    <addaction name="separator"/>
+    <addaction name="actionBlockSplit"/>
+    <addaction name="separator"/>
+    <addaction name="actionBlockList"/>
+   </widget>
+   <widget class="QMenu" name="menuTrack">
+    <property name="title">
+     <string>&amp;Track</string>
+    </property>
+    <widget class="QMenu" name="menuTrackInsert">
+     <property name="title">
+      <string>I&amp;nsert</string>
+     </property>
+     <addaction name="actionTrackInsertCurrentBlock"/>
+     <addaction name="actionTrackInsertAllBlocks"/>
+    </widget>
+    <widget class="QMenu" name="menuTrackDelete">
+     <property name="title">
+      <string>&amp;Delete</string>
+     </property>
+     <addaction name="actionTrackDeleteCurrentBlock"/>
+     <addaction name="actionTrackDeleteAllBlocks"/>
+    </widget>
+    <addaction name="actionTrackCut"/>
+    <addaction name="actionTrackCopy"/>
+    <addaction name="actionTrackPaste"/>
+    <addaction name="separator"/>
+    <addaction name="actionTrackClear"/>
+    <addaction name="separator"/>
+    <addaction name="actionTrackSelectAll"/>
+    <addaction name="separator"/>
+    <addaction name="menuTrackInsert"/>
+    <addaction name="menuTrackDelete"/>
+    <addaction name="separator"/>
+    <addaction name="actionTrackTranspose"/>
+    <addaction name="actionTrackExpandShrink"/>
+    <addaction name="actionTrackChangeInstrument"/>
+   </widget>
+   <widget class="QMenu" name="menuMidi">
+    <property name="title">
+     <string>&amp;MIDI</string>
+    </property>
+    <addaction name="actionMidiKillAllNotes"/>
+    <addaction name="actionMidiResetPitch"/>
+    <addaction name="separator"/>
+    <addaction name="actionMidiMessageList"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>&amp;Settings</string>
+    </property>
+    <widget class="QMenu" name="menuSettingsExternalSync">
+     <property name="title">
+      <string>External Sync</string>
+     </property>
+     <addaction name="actionExternalSyncOff"/>
+     <addaction name="actionExternalSyncMidi"/>
+    </widget>
+    <addaction name="menuSettingsExternalSync"/>
+    <addaction name="actionSettingsSendMidiSync"/>
+    <addaction name="separator"/>
+    <addaction name="actionSettingsRecordControllers"/>
+    <addaction name="separator"/>
+    <addaction name="actionSettingsPreferences"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionHelpHelp"/>
+    <addaction name="actionHelpAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuSong"/>
+   <addaction name="menuPlayingSequence"/>
+   <addaction name="menuBlock"/>
+   <addaction name="menuTrack"/>
+   <addaction name="menuMidi"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionFileNew">
+   <property name="icon">
+    <iconset theme="document-new">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;New</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionFileOpen">
+   <property name="icon">
+    <iconset theme="document-open">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionFileSave">
+   <property name="icon">
+    <iconset theme="document-save">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionFileSaveAs">
+   <property name="icon">
+    <iconset theme="document-save-as">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Save &amp;As</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="text">
+    <string>Print</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionFileQuit">
+   <property name="icon">
+    <iconset theme="application-exit">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionEditCut">
+   <property name="icon">
+    <iconset theme="edit-cut">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>C&amp;ut</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionEditCopy">
+   <property name="icon">
+    <iconset theme="edit-copy">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Copy</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionEditPaste">
+   <property name="icon">
+    <iconset theme="edit-paste">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Paste</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionEditClear">
+   <property name="icon">
+    <iconset theme="edit-clear">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Clear</string>
+   </property>
+  </action>
+  <action name="actionEditTranspose">
+   <property name="text">
+    <string>&amp;Transpose</string>
+   </property>
+  </action>
+  <action name="actionEditExpandShrink">
+   <property name="text">
+    <string>&amp;Expand/Shrink</string>
+   </property>
+  </action>
+  <action name="actionEditChangeInstrument">
+   <property name="text">
+    <string>Change &amp;Instrument</string>
+   </property>
+  </action>
+  <action name="actionSongSectionList">
+   <property name="text">
+    <string>&amp;Section List</string>
+   </property>
+  </action>
+  <action name="actionSongTrackVolumes">
+   <property name="text">
+    <string>Track &amp;Volumes</string>
+   </property>
+  </action>
+  <action name="actionSongTranspose">
+   <property name="text">
+    <string>&amp;Transpose</string>
+   </property>
+  </action>
+  <action name="actionSongExpandShrink">
+   <property name="text">
+    <string>&amp;Expand/Shrink</string>
+   </property>
+  </action>
+  <action name="actionSongChangeInstrument">
+   <property name="text">
+    <string>Change &amp;Instrument</string>
+   </property>
+  </action>
+  <action name="actionSongProperties">
+   <property name="icon">
+    <iconset theme="document-properties">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Properties</string>
+   </property>
+  </action>
+  <action name="actionPlayingSequenceEditCurrent">
+   <property name="text">
+    <string>&amp;Edit Current</string>
+   </property>
+  </action>
+  <action name="actionPlayingSequenceList">
+   <property name="text">
+    <string>&amp;List</string>
+   </property>
+  </action>
+  <action name="actionBlockCut">
+   <property name="icon">
+    <iconset theme="edit-cut">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>C&amp;ut </string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+F3</string>
+   </property>
+  </action>
+  <action name="actionBlockCopy">
+   <property name="icon">
+    <iconset theme="edit-copy">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Copy </string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+F4</string>
+   </property>
+  </action>
+  <action name="actionBlockPaste">
+   <property name="icon">
+    <iconset theme="edit-paste">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Paste </string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+F5</string>
+   </property>
+  </action>
+  <action name="actionBlockClear">
+   <property name="icon">
+    <iconset theme="edit-clear">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Clear</string>
+   </property>
+  </action>
+  <action name="actionBlockSelectAll">
+   <property name="icon">
+    <iconset theme="edit-select-all">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Select All</string>
+   </property>
+  </action>
+  <action name="actionBlockTranspose">
+   <property name="text">
+    <string>&amp;Transpose</string>
+   </property>
+  </action>
+  <action name="actionBlockExpandShrink">
+   <property name="text">
+    <string>&amp;Expand/Shrink</string>
+   </property>
+  </action>
+  <action name="actionBlockChangeInstrument">
+   <property name="text">
+    <string>Change &amp;Instrument</string>
+   </property>
+  </action>
+  <action name="actionBlockList">
+   <property name="text">
+    <string>&amp;List</string>
+   </property>
+  </action>
+  <action name="actionTrackCut">
+   <property name="icon">
+    <iconset theme="edit-cut">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>C&amp;ut </string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+F3</string>
+   </property>
+  </action>
+  <action name="actionTrackCopy">
+   <property name="icon">
+    <iconset theme="edit-copy">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Copy </string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+F4</string>
+   </property>
+  </action>
+  <action name="actionTrackPaste">
+   <property name="icon">
+    <iconset theme="edit-paste">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Paste </string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+F5</string>
+   </property>
+  </action>
+  <action name="actionTrackClear">
+   <property name="icon">
+    <iconset theme="edit-clear">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Clear</string>
+   </property>
+  </action>
+  <action name="actionTrackSelectAll">
+   <property name="icon">
+    <iconset theme="edit-select-all">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Select All</string>
+   </property>
+  </action>
+  <action name="actionTrackTranspose">
+   <property name="text">
+    <string>&amp;Transpose</string>
+   </property>
+  </action>
+  <action name="actionTrackExpandShrink">
+   <property name="text">
+    <string>&amp;Expand/Shrink</string>
+   </property>
+  </action>
+  <action name="actionTrackChangeInstrument">
+   <property name="text">
+    <string>Change &amp;Instrument</string>
+   </property>
+  </action>
+  <action name="actionMidiKillAllNotes">
+   <property name="text">
+    <string>&amp;Kill All Notes</string>
+   </property>
+  </action>
+  <action name="actionMidiResetPitch">
+   <property name="text">
+    <string>&amp;Reset Pitch</string>
+   </property>
+  </action>
+  <action name="actionMidiMessageList">
+   <property name="text">
+    <string>&amp;Message List</string>
+   </property>
+  </action>
+  <action name="actionSettingsSendMidiSync">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Send MIDI Sync</string>
+   </property>
+  </action>
+  <action name="actionSettingsRecordControllers">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Record Controllers</string>
+   </property>
+  </action>
+  <action name="actionSettingsPreferences">
+   <property name="text">
+    <string>&amp;Preferences</string>
+   </property>
+  </action>
+  <action name="actionHelpAbout">
+   <property name="icon">
+    <iconset theme="help-about">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="actionExternalSyncOff">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Off</string>
+   </property>
+  </action>
+  <action name="actionExternalSyncMidi">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>MIDI</string>
+   </property>
+  </action>
+  <action name="actionHelpHelp">
+   <property name="text">
+    <string>&amp;Help</string>
+   </property>
+  </action>
+  <action name="actionBlockSplit">
+   <property name="text">
+    <string>Split</string>
+   </property>
+  </action>
+  <action name="actionTrackInsertCurrentBlock">
+   <property name="text">
+    <string>Current block</string>
+   </property>
+  </action>
+  <action name="actionTrackInsertAllBlocks">
+   <property name="text">
+    <string>All blocks</string>
+   </property>
+  </action>
+  <action name="actionTrackDeleteCurrentBlock">
+   <property name="text">
+    <string>Current block</string>
+   </property>
+  </action>
+  <action name="actionTrackDeleteAllBlocks">
+   <property name="text">
+    <string>All blocks</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Tracker</class>
+   <extends>QWidget</extends>
+   <header>tracker.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>InstrumentSpinBox</class>
+   <extends>QSpinBox</extends>
+   <header>instrumentspinbox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ClickableLabel</class>
+   <extends>QLabel</extends>
+   <header>clickablelabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
