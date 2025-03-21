@@ -112,7 +112,7 @@ FORMS += \
 
 TEMPLATE = app
 TARGET = tutka
-QT += xml widgets gui
+QT += xml widgets gui waylandclient
 DEFINES += QT_NO_DEBUG_OUTPUT
 TRANSLATIONS += tutka_fi.ts tutka_cs.ts tutka_fr.ts
 ICON = tutka.icns
@@ -121,7 +121,7 @@ QMAKE_INFO_PLIST = tutka.plist
 QMAKE_EXTRA_COMPILERS += lrelease
 lrelease.input         = TRANSLATIONS
 lrelease.output        = ${QMAKE_FILE_BASE}.qm
-lrelease.commands      = /run/current-system/sw/bin/lrelease ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_BASE}.qm
+lrelease.commands      = lrelease ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_BASE}.qm
 lrelease.CONFIG       += no_link target_predeps
 
 unix:!macx:SOURCES += alsamidi.cpp alsamidiinterface.cpp
