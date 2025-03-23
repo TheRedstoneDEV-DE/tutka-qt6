@@ -2,7 +2,7 @@
   let
     overrides = (builtins.fromTOML (builtins.readFile ./rust-toolchain.toml));
     libPath = with pkgs; lib.makeLibraryPath [
-      alsaLib
+      alsa-lib
       qt6.qtbase
       jack2
     ];
@@ -11,7 +11,7 @@ in
     buildInputs = with pkgs; [
       qt6.qtbase
       qt6.qttools
-      alsaLib
+      alsa-lib
       jack2
       xorg.libX11
       cmake
