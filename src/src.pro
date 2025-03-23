@@ -134,18 +134,18 @@ macx:LIBS += -framework CoreAudio -framework CoreMidi -framework CoreFoundation
 macx:INCLUDEPATH += /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreMIDI.framework/Versions/A/Headers
 macx:TARGET = Tutka
 
-target.path = /usr/bin
+target.path = /bin
 
-desktop.path = /usr/share/applications
+desktop.path = /share/applications
 desktop.files = tutka.desktop
 
-icon48.path = /usr/share/icons/hicolor/48x48/apps
+icon48.path = /share/icons/hicolor/48x48/apps
 icon48.files = icons/48x48/tutka.png
 
-icon512.path = /usr/share/icons/hicolor/512x512/apps
+icon512.path = /share/icons/hicolor/512x512/apps
 icon512.files = icons/512x512/tutka.png
 
-translations.path = /usr/share/tutka/translations
+translations.path = /share/tutka/translations
 translations.files = *.qm
 
 QMAKE_CXXFLAGS += \
@@ -160,39 +160,3 @@ QMAKE_CLEAN += *.gcov \
     ./.obj/*.gcno
 
 INSTALLS += target desktop icon48 icon512 translations
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -4,6 +4,7 @@
     libPath = with pkgs; lib.makeLibraryPath [
       alsa-lib
       qt6.qtbase
+      qt6.qtwayland
       jack2
     ];
 in
@@ -11,11 +12,15 @@ in
     buildInputs = with pkgs; [
       qt6.qtbase
       qt6.qttools
+      qt6.qtdeclarative
       alsa-lib
       jack2
       xorg.libX11
       cmake
       pkg-config
+      qt6.qtwayland
+      wayland
+      wayland-protocols
     ];
     # https://github.com/rust-lang/rust-bindgen#environment-variables
     LIBCLANG_PATH = pkgs.lib.makeLibraryPath [ pkgs.llvmPackages_latest.libclang.lib ];
