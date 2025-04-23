@@ -69,7 +69,7 @@ Player::Player(MIDI *midi, const QString &path, QObject *parent) :
     setSong(path);
 }
 
-Player::Player(MIDI *midi, Song *song, QObject *parent) :
+Player::Player(MIDI *midi, Song *song, bool from_export, QObject *parent) :
     QThread(parent),
     section_(0),
     playseq_(0),
@@ -89,11 +89,11 @@ Player::Player(MIDI *midi, Song *song, QObject *parent) :
     postCommand(0),
     postValue(0),
     tempoChanged(false),
-    killWhenLooped(false)
+    killWhenLooped(false),
+    from_export(from_export)
 {
     connect(midi, SIGNAL(outputsChanged()), this, SLOT(remapMidiOutputs()));
     connect(qApp, SIGNAL(aboutToQuit()), this, SLOT(stop()));
-
     QTimer::singleShot(0, this, SLOT(init()));
 }
 
@@ -1080,9 +1080,10 @@ void Player::init()
 
     emit songChanged(song);
     updateLocation(true);
-
-    delete oldSong;
-    oldSong = NULL;
+    if (!from_export) {
+      delete oldSong;
+      oldSong = NULL;
+    }
 }
 
 void Player::setSection(int section)

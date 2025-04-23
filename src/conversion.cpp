@@ -568,7 +568,7 @@ SMF *songToSMF(Song *song)
 
     SMF *smf = new SMF;
     BufferMIDI *midi = new BufferMIDI;
-    Player *player = new Player(midi, song);
+    Player *player = new Player(midi, song, true);
     QMetaObject::invokeMethod(player, "init");
     player->playWithoutScheduling();
     char endMTrk[3];

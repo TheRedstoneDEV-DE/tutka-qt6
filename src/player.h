@@ -103,7 +103,7 @@ public:
 
     // Creates a player
     Player(MIDI *midi, const QString &path = QString(), QObject *parent = NULL);
-    Player(MIDI *midi, Song *song, QObject *parent = NULL);
+    Player(MIDI *midi, Song *song, bool from_export, QObject *parent = NULL);
     // Closes a player
     virtual ~Player();
 
@@ -265,6 +265,8 @@ private:
     QList<NoteOn> postponedNotes;
     // Whether the player should quit when the song loops
     bool killWhenLooped;
+    //
+    bool from_export;
 };
 
 #endif // PLAYER_H_
